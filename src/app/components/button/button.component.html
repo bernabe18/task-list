@@ -1,0 +1,13 @@
+<!--utilizamos [ngStyle] para utilizar css inline con una variable  COLOR que recibe valor en el selector montado-->
+<button class="btn" 
+[ngStyle]="{'background':color}"
+(click)="onClick()"
+
+
+>{{text}}</button>
+
+<!--
+    estamos utilizando un boton le asignamos una clase  le damos estilo atraves de [] para enlazar desde el componente al DOM.
+    declaramos un evento () para enlazar del DOM al componente.
+
+-->
