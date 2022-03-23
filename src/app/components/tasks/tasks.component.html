@@ -1,0 +1,12 @@
+<!--para recorrer la lista de tareas usamos ngfor en el selector(template de app-task-item) donde declaramos una variable 
+vacia para que vaya pasanado de a uno . interpolamos nuestro atributo task que contienen un  lista de 
+tasks i compo esta en el componente se ba a mostrar de a uno-->
+<!-- cada task se asigna una task-->
+
+<app-task-item
+ *ngFor="let task of tasks"
+ [task]="task"
+ >
+    {{task.text}
+}</app-task-item>
+
