@@ -1,8 +1,16 @@
 <div class="task">
 <p>{{task.id}}</p>
-<p>{{task.text}}</p>
-<p>{{task.day}}</p>
-<p>{{task.reminder}}</p>
+<!-- utilizamos el selector de fa-icon para traer icon que le asignamos al atibuto-->
+<h3>
+    {{task.text}}
+    <fa-icon [icon]="faTimes"
+    [ngStyle]="{'color':'red'}"
+    ></fa-icon>
+
+</h3>
+<p>
+    {{task.day}}
+</p>
 </div>
 
 <!--esta seria la tarjeta para cada tarea que tengamos y la que se va a mostrar en nuestra app
